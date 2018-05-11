@@ -25,3 +25,64 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+
+## Final 
+
+ng new test2 --style=scss --routing --skip-tests --minimal
+
+--minimal
+--skip-tests
+
+--skip-tests --skip-e2e
+
+
+
+ng generate component home
+
+ng g c about 
+
+
+# App Deployment
+
+ng build --prod
+
+npm install -g angular-cli-ghpages
+
+
+## or create a new repository on the command line
+git init
+git add .
+git commit -m "first commit"
+git remote add origin https://github.com/ward07/example-ng6.git
+git push -u origin master
+
+
+ng build --prod --base-href="https://<username>.github.io/<repo-name>/"
+ng build --prod --base-href "https://USERNAME.github.io/REPOSITORY_NAME/"
+ng build --prod --base-href "https://ward07.github.io/example-ng6/"
+
+
+angular-cli-ghpages
+ngh
+angular-cli-ghpages --dir dist/example-ng6
+
+
+
+## …or create a new repository on the command line
+
+echo "# ward07.github.io" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin git@github.com:ward07/ward07.github.io.git
+git push -u origin master
+
+
+## …or push an existing repository from the command line
+
+git remote add origin git@github.com:ward07/ward07.github.io.git
+git push -u origin master
+
+
+rm -rf .git
